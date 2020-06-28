@@ -15,7 +15,7 @@ class EmailAddressParser
   
   def parse(csv_data)
     #need to use .uniq 
-    rows = csv_data.split("\n")
+    rows = csv_data.split(" ")
   end
 
 end
