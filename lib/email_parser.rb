@@ -8,14 +8,14 @@ class EmailAddressParser
   
   attr_accessor :email_addresses
   
-  def initialize(email_addresses)
-    @email_addresses = email_addresses
+  def initialize(email_address)
+    @email_address = email_address
   end
   
   
   def parse(csv_data)
     #need to use .uniq 
-    rows = csv_data.split(" ")
+    csv_data.split(" ")
   end
 
 end
