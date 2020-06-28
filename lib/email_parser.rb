@@ -17,5 +17,6 @@ class EmailAddressParser
     #need to use .uniq 
     csv_data.split(" , ")
   end
+  csv_data.flatten.uniq
 
 end
