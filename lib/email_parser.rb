@@ -6,7 +6,7 @@
 require 'pry'
 class EmailAddressParser
   
-  attr_accessor :email_addresses, :name
+  attr_accessor :email_address, :name
   
   def initialize(email_address)
     @email_address = email_address
@@ -15,7 +15,6 @@ class EmailAddressParser
   
   def parse(csv_data)
     #need to use .uniq
-  
     @email_address.split.collect do |csv_data|
       csv_data.split(" , ")
     end
