@@ -15,9 +15,10 @@ class EmailAddressParser
   
   def parse(csv_data)
     #need to use .uniq 
-    csv_data.split(" , ")
-  csv_data.flatten.uniq
-
+    @email_address.each do |csv_data|
+      csv_data.split(" , ")
+     csv_data.flatten.uniq
+    end
   end
 
 end
