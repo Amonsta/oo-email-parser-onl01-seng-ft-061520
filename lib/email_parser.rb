@@ -7,7 +7,7 @@ require 'pry'
 
 class EmailAddressParser
   
-  attr_accessor :email_address, :name
+  attr_accessor :email_address
   
   def initialize(email_address)
     @email_address = email_address
@@ -24,19 +24,3 @@ class EmailAddressParser
 
 end
 
-=begin class EmailAddressParser
-  attr_accessor :name, :csv_emails
-  
-  def initialize(csv_emails)
-    @csv_emails = csv_emails
-  end 
-
-
-
-  def parse 
-    csv_emails.split.collect do |address|
-      address.split(',') 
-    end
-    .flatten.uniq 
-  end 
-=end 
