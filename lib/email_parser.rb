@@ -15,7 +15,7 @@ class EmailAddressParser
   
   
   def parse
-    #need to use .uniq
+    #need to use .uniq to prevent duplicates
     @email_address.split.collect do |data|
       data.split(",")
     end
